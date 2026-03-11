@@ -37,7 +37,7 @@ const About = () => {
                 <span className="text-2xl font-black text-white">2+</span>
                 <span className="text-[10px] text-slate-500 uppercase tracking-widest font-bold">İllik Təcrübə</span>
               </div>
-              <div className="w-[1px] h-10 bg-white/5 mx-4" />
+              <div className="w-1 h-10 bg-white/5 mx-4" />
               <div className="flex flex-col">
                 <span className="text-2xl font-black text-white">15+</span>
                 <span className="text-[10px] text-slate-500 uppercase tracking-widest font-bold">Tamamlanmış Layihə</span>
