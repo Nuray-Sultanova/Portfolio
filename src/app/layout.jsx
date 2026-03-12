@@ -27,7 +27,6 @@ export default function RootLayout({ children }) {
         
         <Navbar />
         
-        {/* Səhifələrin daxili məzmunu (children) burada render olunur */}
         {children}
         
        

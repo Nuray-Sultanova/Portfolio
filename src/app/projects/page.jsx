@@ -47,7 +47,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-24 px-6 relative overflow-hidden">
       {/* Arxa fonda zərif işıq effekti */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-rose-500/5 blur-[150px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-200 h-200 bg-rose-500/5 blur-[150px] rounded-full pointer-events-none" />
 
       <div className="max-w-7xl mx-auto relative z-10">
         
@@ -58,10 +58,10 @@ const Projects = () => {
               Selected Works
             </div>
             <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-none">
-              Rəqəmsal <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-rose-200">Portfel.</span>
+              Rəqəmsal <br /> <span className="text-transparent bg-clip-text bg-linear-to-r from-rose-500 to-rose-200">Portfel.</span>
             </h2>
           </div>
-          <div className="hidden md:block h-20 w-[1px] bg-gradient-to-t from-rose-500/50 to-transparent" />
+          <div className="hidden md:block h-20 w-1 bg-linear-to-t from-rose-500/50 to-transparent" />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
@@ -70,8 +70,8 @@ const Projects = () => {
               key={project.id} 
               className={`${project.size} group relative bg-[#0C0C0C] border border-white/5 rounded-[3rem] overflow-hidden transition-all duration-700 hover:shadow-[0_20px_80px_-20px_rgba(244,63,94,0.15)] hover:border-rose-500/20`}
             >
-              <div className="relative h-[450px] w-full">
-                {/* Şəkil */}
+              <div className="relative h-112.5 w-full">
+             
                 <Image 
                   src={project.image} 
                   alt={project.title}
@@ -81,7 +81,7 @@ const Projects = () => {
                 />
                 
                 {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/20 to-transparent opacity-90 group-hover:opacity-40 transition-opacity duration-700" />
+                <div className="absolute inset-0 bg-linear-to-t from-[#050505] via-[#050505]/20 to-transparent opacity-90 group-hover:opacity-40 transition-opacity duration-700" />
 
                 {/* Floating Tag (Küncdəki Kateqoriya) */}
                 <div className="absolute top-8 left-8 z-30">
